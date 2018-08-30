@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta charset="UTF-8">
+        <title>WORLD OF WARSHIPS</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="games.css">
+    </head>
+    <body class="container">
+        <div id="app" >
+            <header class="row text-center text-light">
+                <div class="col-8 titulo">
+                    <h1 >WORLD OF WARSHIPS</h1>
+                </div>
+            </header>
+            <div  class="row">
+                <ul class="col-xs-12 col-sm-6 text-light">
+                    <li v-for="game in games" class="pt-2">Game no. {{game.id}} created on {{game.dates}}
+                        <p>Players:</p>
+                        <ul>
+                            <li v-for="i in game.gamePlayer">{{i.player.email}}</li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="col-xs-12 col-sm-6">
+                    <table class="table tableScores text-light">
+                        <thead>
+                            <tr>
+                                <h4 class="gameTitle text-light">Player Scores</h4>
+                                <th>Player</th>
+                                <th>Score</th>
+                                <th>Wins</th>
+                                <th>Losses</th>
+                                <th>Ties</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr v-for="stat in stats.eachPlayer">
+                                <td>{{stat.userName}}</td>
+                                <td>{{stat.score}}</td>
+                                <td>{{stat.win}}</td>
+                                <td>{{stat.lose}}</td>
+                                <td>{{stat.tie}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            </div> 
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+            <script src="games.js"></script>
+        </body>
+    </html>

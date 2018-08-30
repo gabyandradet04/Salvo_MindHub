@@ -1,0 +1,44 @@
+body{
+	background-image: url(Imagenes/fondo1.jpg);
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.back_tab{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0.36+100 */
+background: -moz-linear-gradient(45deg, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.36) 100%); 
+background: -webkit-linear-gradient(45deg, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.36) 100%); 
+background: linear-gradient(45deg, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.36) 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#5c000000',GradientType=1 ); 
+}
+.back_sal{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0.36+100 */
+background: -moz-linear-gradient(45deg, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.36) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.36) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.36) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#5c000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.titulo{
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3f4c6b+0,5f84a1+99&1+0,0.56+100 */
+background: -moz-linear-gradient(45deg, rgba(63,76,107,1) 0%, rgba(95,132,161,0.56) 99%, rgba(95,132,161,0.56) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg, rgba(63,76,107,1) 0%,rgba(95,132,161,0.56) 99%,rgba(95,132,161,0.56) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg, rgba(63,76,107,1) 0%,rgba(95,132,161,0.56) 99%,rgba(95,132,161,0.56) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3f4c6b', endColorstr='#8f5f84a1',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.barco{
+	background-color: red;
+}
+
+.disp{
+	background-color: #3C4DB3;
+}
+.explo{
+	background-image: url(Imagenes/explo.gif);
+	background-position: center;
+}
+.fallo{
+	background-image: url(Imagenes/Nelson.gif);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
